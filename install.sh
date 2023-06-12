@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export DEBIAN_FRONTEND=noninteractive
+
 # Update package lists
 sudo apt update
 
@@ -29,3 +31,5 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-compose -y
 
 # Install Cockpit
 sudo apt install cockpit -y
+
+sudo reboot
